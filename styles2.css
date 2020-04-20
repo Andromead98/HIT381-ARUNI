@@ -1,0 +1,55 @@
+.body{
+}
+
+/*text styles */
+.CDUTextOne{
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 70px;
+}
+
+.CDUTextTwo{
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 50px;
+}
+
+.CDUTextThree{
+  color: #fff;
+  text-align: center;
+  padding-top: 25px;
+  font-size: 40px;
+}
+
+/* Box Styles */
+.BoxBody{
+  width: 100%;
+  border-spacing: 0,0;
+}
+
+.CDUBanner{
+  border: 1px solid #211545;
+  background-color:#211545;
+  width: 100%;
+  height: 100px;
+}
+
+.CDUMostVisited{
+  border: 1px solid #007a87;
+  background-color:#007a87;
+  width: 100%;
+  height: 100px;
+}
+
+.FacilitiesServices{
+  border: 1px solid #008593;
+  background-color:#008593;
+  width: 100%;
+  height: 100px;
+}
+
+.ButtonBox{
+  
+}
