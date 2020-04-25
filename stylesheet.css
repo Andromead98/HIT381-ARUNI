@@ -1,5 +1,5 @@
 
-/* Side navigation Start - Code modifed from original (https://www.w3schools.com/howto/howto_js_sidenav.asp)*/
+/* Side navigation and header Start - Code modifed from original (https://www.w3schools.com/howto/howto_js_sidenav.asp)*/
 .header-nav{
   border: 1px solid #201644;
   background-color:#201644;
@@ -72,7 +72,31 @@
   font-weight:400;
   font-size: 1.4rem;
 }
-/* Side navigation End */
+/* Side navigation and header End */
+
+/* Google maps Start - Adapted from https://www.ostraining.com/blog/coding/responsive-google-maps/*/
+.google-maps {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: fixed;
+  height: 85%;
+  width: 100%;
+}
+.google-maps iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* Google map end */
+
+
+
+
+
+
+
 
 /* Footer navigation Start */
 .footer-nav{
