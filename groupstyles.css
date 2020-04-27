@@ -1,0 +1,102 @@
+.body{
+
+}
+
+.contentBox{
+  width: 80%;
+  height: 200px;
+  margin: auto;
+
+}
+
+.ColourBoxOne{
+  width: 15%;
+  height: 200px;
+  float: left;
+  margin-left: 30%;
+}
+
+.ColourBoxTwo{
+  margin-left: 60%;
+  height: 200px;
+  padding-top: 19px;
+}
+
+.textBox{
+  background-color: #1f1643;
+}
+.HeadingOne{
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 35px;
+}
+
+.HeadingTwo{
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 30px;
+
+}
+
+.HeadingThree{
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+.colourOne{
+  height: 100px;
+  width: 100px;
+  background-color: #1f1643;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.colourTwo{
+  height: 100px;
+  width: 100px;
+  background-color: #007a87;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.colourThree{
+  height: 100px;
+  width: 100px;
+  background-color: #008593;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.ButtonColour{
+  height: 100px;
+  width: 100px;
+  background-color: #A8C5C8;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.ButtonTextColour{
+  height: 100px;
+  width: 100px;
+  background-color: #201644;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.BackgroundColour{
+  height: 100px;
+  width: 100px;
+  background-color: #FFFFFF;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
