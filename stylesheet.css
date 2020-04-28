@@ -5,6 +5,7 @@
   background-color:#201644;
   padding-bottom: 8px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu{
@@ -72,6 +73,12 @@
   font-weight:400;
   font-size: 1.4rem;
 }
+
+.search-btn{
+  margin: auto;
+  width: 98%;
+}
+
 /* Side navigation and header End */
 
 /* Google maps Start - Adapted from https://www.ostraining.com/blog/coding/responsive-google-maps/*/
@@ -79,7 +86,7 @@
   overflow: hidden;
   padding-bottom: 56.25%;
   position: fixed;
-  height: 85%;
+  height: 80%;
   width: 100%;
 }
 .google-maps iframe {
