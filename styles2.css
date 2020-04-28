@@ -4,6 +4,7 @@
   background-color:#201644;
   padding-bottom: 12px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu{
@@ -70,6 +71,11 @@
   color:#48535f;
   font-weight:400;
   font-size: 1.4rem;
+}
+
+.search-btn{
+  margin: auto;
+  width: 98%;
 }
 /* Side navigation End */
 
