@@ -4,49 +4,66 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="Description" content="ARUNI">
     <title>ARUNI</title>
+    <script defer src="js/myscript.js"></script>
+
   </head>
   <body>
     <header class="header-nav">
-      <span style="font-size:30px;cursor:pointer;color:white;padding: 1px 0 0 10px;" onclick="openNav()">&#9776;</span>
+      <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
       <h2 style="margin: auto;color: white;font-size:1.6rem;">CDU Casuarina Campus</h2>
-      <div class="break" style="flex-basis: 100%;height:0;"></div>
-      <a class="search-btn" href="voicesearch.html"><input type="button" value="Feeling lost? Use this Building Search 🔍" class="search-btn"></input></a>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <h2 class="form-h2 navforms">Addtional</h2>
         <hr style="margin-bottom:0;"/>
         <div class="navforms forms">
-          <p><a href="events.html">Upcoming events</p></a>
+          <p><a href="index.html">Upcoming events</p></a>
         </div>
         <h2 class="form-h2 navforms">Settings</h2>
         <hr style="margin-bottom:0;"/>
         <div class="navforms forms">
-          <p><a href="changecampus.html">Change Campus</p></a>
-          <p><a href="help.html">Help</a></p>
+          <p><a href="index.html">Change Campus</p></a>
+          <p><a href="index.html">Help</a></p>
         </div>
       </div>
     </header>
     <!-- Page Content here (Put your page stuff here)-->
-    <div class="google-maps">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.7083141454386!2d130.86865301730023!3d-12.372207866357746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cc0935c60807e7d%3A0x2a4fef1c2399f57c!2sInformation%20Center!5e0!3m2!1sen!2sau!4v1587778670881!5m2!1sen!2sau"
-      height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
-      </iframe>
+    <div class="buildingphoto">
+      <img class="library_info" src="images/library.png">
     </div>
 
+    <div class="button">
+    <button data-info-target="#info">View building info</button>
+    </div>
+    <div class="button2">
+      <button class= "AR-view" type="button" href="">Start AR View</button>
+    </div>
 
-
-
+    <div class="info" id="info">
+      <div class="info-header">
+        <div class="title">Library Information</div>
+        <button info-close-button class="close-button">&times;</button>
+      </div>
+      <div class="info-body">
+        The CDU Library provides access to research and reference materials, printting and photocopying facilities,
+        PC access and study areas. Opening hours vary during semester breaks and exams periods
+        <a href = "https://www.cdu.edu.au/library">check the library website</a>for the most up-to-date schedule.
+      </div>
+      <div class="">
+        <img class = "image1" src="images/building.png">
+      </div>
+    </div>
+    <div id="popup_overlay"></div>
 
 
     <!-- End Page content -->
     <div class="footer-nav">
-      <a href="index.html" style="width: 85%;"><span class="material-icons" style="font-size: 1.6rem;">house</span><p style="margin: auto;">Home</p></a>
+      <a href="index.html" style="width: 85%;"><span class="material-icons" style="font-size: 1.6rem; color: gray;">house</span><p style="margin: auto; color: gray">Home</p></a>
       <a href="mostvisited.html"><span class="material-icons" style="font-size: 1.6rem;color: gray;">location_city</span><p style="margin: auto;color: gray;">Most Visited</p></a>
-      <a href="AR_View.html"><span class="material-icons" style="font-size: 1.6rem;color: gray;">camera</span><p style="margin: auto;color: gray;">AR View</p></a>
+      <a href="AR_View.html"><span class="material-icons" style="font-size: 1.6rem;">camera</span><p style="margin: auto;">AR View</p></a>
     </div>
     <script href="bootstrap.bundle.js"></script>
     <script>
