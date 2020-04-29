@@ -98,7 +98,6 @@
 /* Footer navigation End */
 
 
-
 .buildingphoto{
   display: block;
   margin-left: auto;
@@ -124,8 +123,6 @@
   width: 50%;
   top:50%;
 }
-
-
 
 .info {
   position: fixed;
@@ -191,4 +188,55 @@
 #popup_overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+
+@media screen and (max-width: 1024px){
+  .library_info{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 130%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .AR_view{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+
+  }
+  .info {
+    width: 600px;
+    max-width: 80%;
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+   .library_info{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 50%;
+     top:50%;
+  }
+
+  }
+  .AR_view{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+  }
+  .image1{
+    width:600px;
+  }
 }
