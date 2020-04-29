@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="Description" content="ARUNI">
+    <title>ARUNI</title>
+  </head>
+  <body>
+    <header class="header-nav">
+      <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
+      <h2 style="margin: auto;color: white;font-size:1.6rem;">CDU Casuarina Campus</h2>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 class="form-h2 navforms">Addtional</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="index.html">Upcoming events</p></a>
+        </div>
+        <h2 class="form-h2 navforms">Settings</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="index.html">Change Campus</p></a>
+          <p><a href="index.html">Help</a></p>
+        </div>
+      </div>
+    </header>
+    <!-- Page Content here (Put your page stuff here)-->
+
+
+
+<nav class ="Menu">
+  <ul>
+    <li><a href ="https://www.cdu.edu.au/library"> Library </a></li>
+    <li><a href ="https://bookshop.cdu.edu.au/"> Bookshop</a></li>
+    <li><a href ="https://www.cdu.edu.au/contact-cdu"> Office</a></li>
+    <li><a href ="https://auspost.com.au/"> Aus Post</a></li>
+    <li><a href ="https://www.cdu.edu.au/itms"> IT</a></li>
+    <li><a href ="http://www.nt.ymca.org.au/where-we-are/darwin-palmerston/gym@cdu/Pages/default.aspx"> GYM</a></li>
+
+  </ul>
+
+<form class ="search-form">
+  <input type ="text" placeholder ="Speak...">
+  <button> Voice Search</button>
+</form>
+
+</nav>
+
+<p></p>
+<input type="filter" id="myInput" onkeyup="myFunction()" placeholder="Please Enter Your Location">
+
+<ul id="myUL">
+  <li><a href="https://www.cdu.edu.au/library">Library</a></li>
+  <li><a href="https://bookshop.cdu.edu.au/">Bookshop</a></li>
+  <li><a href="https://www.cdu.edu.au/contact-cdu">Office</a></li>
+  <li><a href="https://auspost.com.au/">Aus Post</a></li>
+  <li><a href="https://www.cdu.edu.au/itms">IT</a></li>
+  <li><a href="http://www.nt.ymca.org.au/where-we-are/darwin-palmerston/gym@cdu/Pages/default.aspx">Gym</a></li>
+
+</ul>
+
+
+
+
+    <!-- End Page content -->
+    <div class="footer-nav">
+      <a href="index.html" style="width: 85%;"><span class="material-icons" style="font-size: 1.3rem;">house</span><br>Home</a>
+      <a href="mostvisited.html"><span class="material-icons" style="font-size: 1.3rem;">location_city</span><br>Most Visited</a>
+      <a href="buildingview.html"><span class="material-icons" style="font-size: 1.3rem;">360</span><br>AR View</a>
+    </div>
+    <script href="bootstrap.bundle.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "70%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>
