@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="Description" content="ARUNI">
+    <title>ARUNI</title>
+  </head>
+  <body>
+    <header class="header-nav">
+      <span style="font-size:30px;cursor:pointer;color:white;padding: 1px 0 0 10px;" onclick="openNav()">&#9776;</span>
+      <h2 style="margin: auto;color: white;font-size:1.6rem;">CDU Casuarina Campus</h2>
+      <div class="break" style="flex-basis: 100%;height:0;"></div>
+      <a class="search-btn" href="voicesearch.html"><input type="button" value="Building Search 🔍" class="search-btn"></input></a>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 class="form-h2 navforms">Addtional</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="events.html">Upcoming events</p></a>
+        </div>
+        <h2 class="form-h2 navforms">Settings</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="changecampus.html">Change Campus</p></a>
+          <p><a href="help.html">Help</a></p>
+        </div>
+      </div>
+    </header>
+    <!-- Page Content here (Put your page stuff here)-->
+    <div class="BoxBody">
+      <div class="CDUMostVisited">
+        <div class="CDUTextTwo">Most Visited</div>
+      </div>
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Facilities & Services</div>
+      </div>
+      <div class="ButtonBox">
+        <div class="ButtonLine">
+          <button class= "StudentCentral" type="button" href="">Student Central</button>
+          <button class = "Security" type="button" href="">Security</button>
+          <button class= "LibraryLocation" type="button"><a href="AR_View.html">Library</a></button>
+        </div>
+        <div class="ButtonLine">
+          <button class= "UniPrint" type="button" href="">UniPrint</button>
+          <button class= "CDUBookshop" type="button" href="">Bookshop</button>
+          <button class= "ITKiosk" type="button" href="">IT Kiosk</button>
+        </div>
+        <div class="ButtonLine">
+          <button class= "Childcare" type="button" href="">Childcare Center</button>
+          <button class= "PostOffice" type="button" href="">Post Office</button>
+          <button class= "Menzies" type="button" href=""> Menzies</button>
+        </div>
+        <div class="ButtonLine">
+          <button class= "CYCM" type="button" href="">CYCM</button>
+          <button class= "UglyDuck" type="button" href="">Ugly Duckling</button>
+          <button class= "ArtHouse" type="button" href="">The Arthouse</button>
+        </div>
+        <div class="ButtonLine">
+          <button class= "LunchRoom" type="button" href="">The Lunch Room</button>
+        </div>
+      </div>
+      <div class="CDUGardensGalleries">
+        <div class="CDUTextThree">CDU Gardens, Galleries & Theatres</div>
+      </div>
+      <div class="ButtonBox">
+        <div class="ButtonLine">
+          <button class="ChineseGarden" type="button" href="">Chinese Garden</button>
+          <button class="IndonesianGarden" type="button" href="">Indonesian Garden</button>
+          <button class="MalNairn" type="button" href="">Mal Nairn</button>
+        </div>
+        <div class="ButtonLine">
+          <button class= "UniversityTheatre" type="button" href="">University Theatre</button>
+          <button class= "NanGiese" type="button" href="">Nan Giese Gallery</button>
+          <button class= "CDUGallery" type="button" href="">Art Gallery</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Page content -->
+    <div class="footer-nav">
+      <a href="index.html" style="width: 85%;"><span class="material-icons" style="font-size: 1.6rem; color: gray">house</span><p style="margin: auto;color: gray">Home</p></a>
+      <a href="mostvisited.html"><span class="material-icons" style="font-size: 1.6rem;">location_city</span><p style="margin: auto;">Most Visited</p></a>
+      <a href="AR_View.html"><span class="material-icons" style="font-size: 1.6rem;color: gray;">camera</span><p style="margin: auto;color: gray;">AR View</p></a>
+    </div>
+    <script href="js/bootstrap.bundle.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "70%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>
