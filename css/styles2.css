@@ -191,3 +191,13 @@
     font-size: 25px;
   }
 }
+
+
+#info__layer {
+	display: block;
+}
+/*body*/
+
+#building_info1{
+  display: none;
+}

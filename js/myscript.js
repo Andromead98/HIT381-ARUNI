@@ -34,3 +34,9 @@ closeInfoButtons.forEach(button => {
     closeInfo(info)
   })
 })
+
+
+function show_building1() {
+  document.getElementById("info__layer").style.display = "none";
+  document.getElementById("building_info1").style.display = "block";
+}
