@@ -198,6 +198,7 @@
 }
 /*body*/
 
-#building_info1{
+#building_info1,#building_info2,#building_info3,#building_info4,#building_info5,#building_info6,#building_info7,#building_info8,#building_info9,#building_info10,
+#building_info11,#building_info12,#building_info13,#building_info14,#building_info15,#building_info16,#building_info17,#building_info18,#building_info19{
   display: none;
 }
