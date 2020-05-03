@@ -206,7 +206,8 @@
   cursor: pointer;
 }
 
-.info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9{
+.info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9, .info10, .info11, .info12,
+.info13, .info14, .info15, .info16, .info17, .info18, .info19{
   position: fixed;
   top: 50%;
   left: 50%;
@@ -225,12 +226,14 @@
 }
 
 .info1.active, .info2.active, .info3.active, .info4.active, .info5.active, .info6.active, .info7.active, .info8.active,
-.info9.active {
+.info9.active, .info10.active, .info11.active, .info12.active, .info13.active, .info14.active, .info15.active, .info16.active,
+ .info17.active, .info18.active, .info19.active  {
   transform: translate(-50%, -50%) scale(1);
 }
 
 .info-header1, .info-header2,.info-header3, .info-header4, .info-header5, .info-header6, .info-header7, .info-header8,
-.info-header9{
+.info-header9, .info-header10, .info-header11, .info-header12, .info-header13, .info-header14, .info-header15, .info-header16,
+.info-header17, .info-header18, .info-header19{
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
@@ -239,13 +242,16 @@
 }
 
 .info-header1 .title, .info-header2 .title, .info-header3 .title, .info-header4 .title, .info-header5 .title, .info-header6 .title, .info-header7 .title,
-.info-header8 .title, .info-header9 .title {
+.info-header8 .title, .info-header9 .title, .info-header10 .title, .info-header11 .title, .info-header12 .title, .info-header13 .title,
+.info-header14 .title,.info-header15 .title, .info-header16 .title, .info-header17 .title, .info-header18 .title, .info-header19 .title{
   font-size: 30px;
   font-weight: bold;
 }
 
 .info-header1 .close-button, .info-header2 .close-button, .info-header3 .close-button, .info-header4 .close-button, .info-header5 .close-button,
-.info-header6 .close-button, .info-header7 .close-button, .info-header8 .close-button, .info-header9 .close-button{
+.info-header6 .close-button, .info-header7 .close-button, .info-header8 .close-button, .info-header9 .close-button, .info-header10 .close-button,
+.info-header11 .close-button, .info-header12 .close-button, .info-header13 .close-button, .info-header14 .close-button, .info-header15 .close-button
+, .info-header16 .close-button, .info-header17 .close-button, .info-header18 .close-button, .info-header19 .close-button{
   cursor: pointer;
   border: none;
   outline: none;
@@ -255,7 +261,8 @@
   font-weight: bold;
 }
 
-.info-body1, .info-body2, .info-body3， .info-body4, .info-body5, .info-body6, .info-body7, .info-body8, .info-body9{
+.info-body1, .info-body2, .info-body3， .info-body4, .info-body5, .info-body6, .info-body7, .info-body8, .info-body9, .info-body10,
+.info-body11, .info-body12, .info-body13, .info-body14, .info-body15, .info-body16, .info-body17, .info-body18, .info-body19{
   padding: 10px 15px;
 }
 

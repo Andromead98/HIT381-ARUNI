@@ -307,6 +307,350 @@ closeInfoButtons.forEach(button => {
   })
 })
 //info9 closed//
+//info10//
+function openInfo(info10) {
+  if (info10 == null) return
+  info10.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info10) {
+  if (info10 == null) return
+  info10.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info10 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info10)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info10 = document.querySelectorAll('.info10.active')
+  info10.forEach(info10 => {
+    closeInfo(info10)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info10 = button.closest('.info10')
+    closeInfo(info10)
+  })
+})
+//info10 closed//
+//info11//
+function openInfo(info11) {
+  if (info11 == null) return
+  info11.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info11) {
+  if (info11 == null) return
+  info11.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info11 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info11)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info11 = document.querySelectorAll('.info11.active')
+  info11.forEach(info11 => {
+    closeInfo(info11)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info11 = button.closest('.info11')
+    closeInfo(info11)
+  })
+})
+//info11 closed//
+//info12//
+function openInfo(info12) {
+  if (info12 == null) return
+  info12.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info12) {
+  if (info12 == null) return
+  info12.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info12 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info12)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info12 = document.querySelectorAll('.info12.active')
+  info12.forEach(info12 => {
+    closeInfo(info12)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info12 = button.closest('.info12')
+    closeInfo(info12)
+  })
+})
+//info12 closed//
+
+//info13//
+function openInfo(info13) {
+  if (info13 == null) return
+  info13.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info13) {
+  if (info13 == null) return
+  info13.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info13 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info13)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info13 = document.querySelectorAll('.info13.active')
+  info13.forEach(info13 => {
+    closeInfo(info13)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info13 = button.closest('.info13')
+    closeInfo(info13)
+  })
+})
+//info13 closed//
+//info14//
+function openInfo(info14) {
+  if (info14 == null) return
+  info14.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info14) {
+  if (info14 == null) return
+  info14.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info14 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info14)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info14 = document.querySelectorAll('.info14.active')
+  info14.forEach(info14 => {
+    closeInfo(info14)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info14 = button.closest('.info14')
+    closeInfo(info14)
+  })
+})
+//info14 closed//
+//info15//
+function openInfo(info15) {
+  if (info15 == null) return
+  info15.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info15) {
+  if (info15 == null) return
+  info14.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info15 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info15)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info15 = document.querySelectorAll('.info15.active')
+  info15.forEach(info15 => {
+    closeInfo(info15)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info15 = button.closest('.info15')
+    closeInfo(info15)
+  })
+})
+//info15 closed//
+//info16//
+function openInfo(info16) {
+  if (info16 == null) return
+  info16.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info16) {
+  if (info16 == null) return
+  info16.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info16 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info16)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info16 = document.querySelectorAll('.info16.active')
+  info16.forEach(info16 => {
+    closeInfo(info16)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info16 = button.closest('.info16')
+    closeInfo(info16)
+  })
+})
+//info16 closed//
+
+//info17//
+function openInfo(info17) {
+  if (info17 == null) return
+  info17.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info17) {
+  if (info17 == null) return
+  info17.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info17 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info17)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info17 = document.querySelectorAll('.info17.active')
+  info17.forEach(info17 => {
+    closeInfo(info17)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info17 = button.closest('.info17')
+    closeInfo(info17)
+  })
+})
+//info17 closed//
+
+//info18//
+function openInfo(info18) {
+  if (info18 == null) return
+  info18.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info18) {
+  if (info18 == null) return
+  info18.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info18 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info18)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info18 = document.querySelectorAll('.info18.active')
+  info18.forEach(info18 => {
+    closeInfo(info18)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info18 = button.closest('.info18')
+    closeInfo(info18)
+  })
+})
+//info18 closed//
+
+//info19//
+function openInfo(info19) {
+  if (info19 == null) return
+  info19.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info19) {
+  if (info19 == null) return
+  info19.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info19 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info19)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info19 = document.querySelectorAll('.info19.active')
+  info19.forEach(info19 => {
+    closeInfo(info19)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info19 = button.closest('.info19')
+    closeInfo(info19)
+  })
+})
+//info18 closed//
 
 
 console.log("hello"+1);
