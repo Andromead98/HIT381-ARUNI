@@ -1,37 +1,108 @@
 const openInfoButtons = document.querySelectorAll('[data-info-target]')
 const closeInfoButtons = document.querySelectorAll('[info-close-button]')
 const popup_overlay = document.getElementById('popup_overlay')
-
-function openInfo(info) {
-  if (info == null) return
-  info.classList.add('active')
+// info1//
+function openInfo(info1) {
+  if (info1 == null) return
+  info1.classList.add('active')
   popup_overlay.classList.add('active')
 }
 
-function closeInfo(info) {
-  if (info == null) return
-  info.classList.remove('active')
+function closeInfo(info1) {
+  if (info1 == null) return
+  info1.classList.remove('active')
   popup_overlay.classList.remove('active')
 }
 
 openInfoButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const info = document.querySelector(button.dataset.infoTarget)
-    openInfo(info)
+    const info1 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info1)
   })
 })
 
 popup_overlay.addEventListener('click', () => {
-  const info = document.querySelectorAll('.info.active')
-  infos.forEach(info => {
-    closeInfo(info)
+  const info1 = document.querySelectorAll('.info1.active')
+  info1.forEach(info1 => {
+    closeInfo(info1)
   })
 })
 
 closeInfoButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const info = button.closest('.info')
-    closeInfo(info)
+    const info1 = button.closest('.info1')
+    closeInfo(info1)
+  })
+})
+
+//info1 closed//
+
+//info2//
+function openInfo(info2) {
+  if (info2 == null) return
+  info2.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info2) {
+  if (info2 == null) return
+  info1.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info2 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info2)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info2 = document.querySelectorAll('.info2.active')
+  info2.forEach(info2 => {
+    closeInfo(info2)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info2 = button.closest('.info2')
+    closeInfo(info2)
+  })
+})
+
+//info2 closed//
+
+function openInfo(info3) {
+  if (info3 == null) return
+  info3.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info3) {
+  if (info3 == null) return
+  info3.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info3 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info3)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info3 = document.querySelectorAll('.info3.active')
+  info3.forEach(info3 => {
+    closeInfo(info3)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info3 = button.closest('.info3')
+    closeInfo(info3)
   })
 })
 

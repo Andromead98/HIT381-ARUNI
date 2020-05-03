@@ -190,7 +190,7 @@
   cursor: pointer;
 }
 
-.info {
+.info1, .info2, .info3{
   position: fixed;
   top: 50%;
   left: 50%;
@@ -208,11 +208,11 @@
   width:1px;
 }
 
-.info.active {
+.info1.active, .info2.active, .info3.active {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.info-header {
+.info-header1, .info-header2,.info-header3 {
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
@@ -220,12 +220,12 @@
   border-bottom: 1px solid black;
 }
 
-.info-header .title {
+.info-header1 .title, .info-header2 .title, .info-header3 .title  {
   font-size: 30px;
   font-weight: bold;
 }
 
-.info-header .close-button {
+.info-header1 .close-button, .info-header2 .close-button.info-header3 .close-button {
   cursor: pointer;
   border: none;
   outline: none;
@@ -235,7 +235,7 @@
   font-weight: bold;
 }
 
-.info-body {
+.info-body1, .info-body2, .info-body3 {
   padding: 10px 15px;
 }
 
@@ -254,6 +254,12 @@
 #popup_overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+img{
+  vertical-align: middle;
+  border-right: none;
+  width: 100%;
 }
 
 .info6{
