@@ -1,10 +1,25 @@
 /* Side navigation Start - Code modifed from original (https://www.w3schools.com/howto/howto_js_sidenav.asp)*/
 .header-nav{
   border: 1px solid #201644;
-  background-color:#201644;
-  padding-bottom: 12px;
+  background-color:white;
+  padding-bottom: 8px;
   display: flex;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+}
+
+.h2-main{
+  margin: auto;
+  color: #201644;
+  font-size:1.6rem;
+}
+
+.nav-icon{
+  font-size:30px;
+  cursor:pointer;
+  color:#201644;
+  padding: 1px 0 0 10px;
 }
 
 .menu{
@@ -82,14 +97,13 @@
 /* Footer navigation Start */
 .footer-nav{
   border-top: solid lightgrey 1px;
-  background-color: #201644;
+  background-color: white;
   bottom: 0;
   width: 100%;
   margin: auto;
   display: flex;
   position: fixed;
   text-align: center;
-  color: black;
   padding: 5px 0 5px 0;
   font-size: .85rem;
 }
@@ -99,6 +113,10 @@
   color: White;
   text-decoration: none;
   width: 100%;
+}
+
+.icons{
+  color: #201644;
 }
 /* Footer navigation End */
 /* Ann's CSS starts*/
