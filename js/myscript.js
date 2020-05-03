@@ -22,7 +22,7 @@ openInfoButtons.forEach(button => {
 })
 
 popup_overlay.addEventListener('click', () => {
-  const infos = document.querySelectorAll('.info.active')
+  const info = document.querySelectorAll('.info.active')
   infos.forEach(info => {
     closeInfo(info)
   })
@@ -32,6 +32,40 @@ closeInfoButtons.forEach(button => {
   button.addEventListener('click', () => {
     const info = button.closest('.info')
     closeInfo(info)
+  })
+})
+
+
+function openInfo(info6) {
+  if (info6 == null) return
+  info6.classList.add('active')
+  popup_overlay.classList.add('active')
+}
+
+function closeInfo(info6) {
+  if (info6 == null) return
+  info6.classList.remove('active')
+  popup_overlay.classList.remove('active')
+}
+
+openInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info6 = document.querySelector(button.dataset.infoTarget)
+    openInfo(info6)
+  })
+})
+
+popup_overlay.addEventListener('click', () => {
+  const info6 = document.querySelectorAll('.info6.active')
+  info6.forEach(info6 => {
+    closeInfo(info6)
+  })
+})
+
+closeInfoButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const info6 = button.closest('.info6')
+    closeInfo(info6)
   })
 })
 

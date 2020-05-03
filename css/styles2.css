@@ -256,6 +256,78 @@
   pointer-events: all;
 }
 
+.info6{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 180ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 1;
+  background-color: white;
+  width: 600px;
+  max-width: 80%;
+}
+
+.box{
+  width:1px;
+}
+
+.info6.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.info-header6 {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.info-header6 .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.info-header6 .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.info-body6 {
+  padding: 10px 15px;
+}
+
+#popup_overlay{
+  position: fixed;
+  opacity: 0;
+  transition: 180ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .3);
+  pointer-events: none;
+}
+
+#popup_overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+img{
+  vertical-align: middle;
+  border-right: none;
+  width: 100%;
+}
+
 
 @media screen and (max-width: 1024px){
   .buildingphoto{
@@ -302,7 +374,6 @@
     width: 600px;
     max-width: 80%;
   }
-
   img{
     vertical-align: middle;
     border-right: none;
