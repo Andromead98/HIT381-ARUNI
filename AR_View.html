@@ -11,7 +11,7 @@
     <meta name="Description" content="ARUNI">
     <title>ARUNI</title>
     <script defer src="js/myscript.js"></script>
-    <script defer src="js/arscript.js"></script>
+    
 
   </head>
   <body>
@@ -20,32 +20,6 @@
       <video id="arview" autoplay></video>
     </div>
     
-
-    <script>
-      const constraints = {
-        video: true
-      };
-      
-      const video = document.querySelector('video');
-      
-      navigator.mediaDevices.getUserMedia(constraints).
-        then((stream) => {video.srcObject = stream});
-      
-      const hdConstraints = {
-        video: {width: {exact: 375}, height: {min: 667}}
-      };
-
-      navigator.mediaDevices.getUserMedia(hdConstraints).
-        then((stream) => {video.srcObject = stream});
-      /*
-      const vgaConstraints = {
-        video: {width: {exact: 640}, height: {exact: 480}}
-      };
-
-      navigator.mediaDevices.getUserMedia(vgaConstraints).
-        then((stream) => {video.srcObject = stream});
-      */
-      
-      </script>
+    <script defer src="js/arscript.js"></script>
   </body>
 </html>
