@@ -161,6 +161,15 @@
 /* Media Queires for buttons*/
 
 @media screen and (max-width: 1024px){
+  .StudentCentral, .Security, .LibraryLocation, .UniPrint, .CDUBookshop, .ITKiosk, .Childcare, .PostOffice, .Menzies, .CYCM, .UglyDuck, .ArtHouse, .LunchRoom,
+  .ChineseGarden, .IndonesianGarden, .MalNairn, .UniversityTheatre, .NanGiese, .CDUGallery{
+    width: 30%;
+    height: 40px;
+    font-size: 1rem;
+  }
+}
+/*
+@media screen and (max-width: 1024px){
   .Security, .LibraryLocation, .UniPrint, .CDUBookshop, .ITKiosk, .PostOffice, .Menzies, .CYCM, .UglyDuck, .ArtHouse, .MalNairn, .CDUGallery, .ChineseGarden {
     width: 30%;
     font-size: 14px;
@@ -185,4 +194,33 @@
     height: 60px;
     font-size: 25px;
   }
+}
+*/
+
+/*Events page css*/
+.informationbox{
+  padding-bottom: 10px;
+}
+
+.accordion{
+  background-color: #ccc;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #444;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accoordion:hover{
+  background-color: #A8C5C8;
+}
+
+.panel{
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="Description" content="ARUNI">
+    <title>ARUNI</title>
+  </head>
+  <body>
+    <header class="header-nav">
+      <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
+      <h2 style="margin: auto;color: white;font-size:1.6rem;">CDU Casuarina Campus</h2>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 class="form-h2 navforms">Addtional</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="events.html">Upcoming events</p></a>
+        </div>
+        <h2 class="form-h2 navforms">Settings</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="index.html">Change Campus</p></a>
+          <p><a href="index.html">Help</a></p>
+        </div>
+      </div>
+    </header>
+    <!-- Page Content here (Put your page stuff here)-->
+    <div class="eventsbox">
+      <div class="informationbox">
+        Find out about the many past and future events being held at Charles Darwin University!
+      </div>
+      <button class="accordion">Upcoming Events</button>
+      <div class="panel">
+        <button class="accordion">Livestream Music Concerts</button>
+        <div class="panel">
+          <p>Every Thursday noon, music is being live-streamed from the Charles Darwin University theatre into homes around the world.</p>
+          <p>9th April 2020 to 28 May 2020
+            <br> Tag: Art/Exhibition
+          </p>
+        </div>
+        <button class="accordion">Midwifery: Celebrate, Demonstrate, Mobilise, Unite</button>
+        <div class="panel">
+          <p>A webinar to celebrate the International Day of the Midwife</p>
+          <p>5 May 2020
+            <br> Tag: Seminar/Lecture/Forum
+          </p>
+        </div>
+        <button class="accordion">You can't ask that! Nurses Edition</button>
+        <div class="panel">
+          <p>A webinar to celebrate International Nurses Day, and Internation Year of the Nurse and Midwife, the College of Nursing and Midwifery at Charles Darwin University in collaboration with NT Health.</p>
+          <p>12 May 2020
+            <br> Tag: Seminar/Lecture/Forum
+          </p>
+        </div>
+      </div>
+      <button class="accordion">Past Events</button>
+      <div class="panel">
+        <p>events</p>
+      </div>
+      <button class="accordion">Host an Event with us!</button>
+      <div class="panel">
+        <p>events</p>
+      </div>
+
+    </div>
+
+    <!-- End Page content -->
+    <div class="footer-nav">
+      <a href="index.html" style="width: 85%;"><span class="material-icons" style="font-size: 1.3rem;">house</span><br>Home</a>
+      <a href="mostvisited.html"><span class="material-icons" style="font-size: 1.3rem;">navigation</span><br>Most Visited</a>
+      <a href="buildingview.html"><span class="material-icons" style="font-size: 1.3rem;">apartment</span><br>Building View</a>
+    </div>
+    <script href="bootstrap.bundle.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "70%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+      }
+
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++){
+        acc[i].addEventListener("click", function(){
+          this.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block"){
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block"
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
