@@ -11,73 +11,41 @@
     <meta name="Description" content="ARUNI">
     <title>ARUNI</title>
     <script defer src="js/myscript.js"></script>
+    <script defer src="js/arscript.js"></script>
 
   </head>
   <body>
-    <header class="header-nav">
-      <span class="nav-icon" onclick="openNav()">&#9776;</span>
-      <h2 class="h2-main">CDU Casuarina Campus</h2>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h2 class="form-h2 navforms">Addtional</h2>
-        <hr style="margin-bottom:0;"/>
-        <div class="navforms forms">
-          <p><a href="index.html">Upcoming events</p></a>
-        </div>
-        <h2 class="form-h2 navforms">Settings</h2>
-        <hr style="margin-bottom:0;"/>
-        <div class="navforms forms">
-          <p><a href="index.html">Change Campus</p></a>
-          <p><a href="index.html">Help</a></p>
-        </div>
-      </div>
-    </header>
-    <!-- Page Content here (Put your page stuff here)-->
-    <div class="buildingphoto">
-      <img class="library_info" src="images/library.png">
+    
+    <div class="videocontainer">
+      <video id="arview" autoplay></video>
     </div>
+    
 
-    <div class="button">
-    <button data-info-target="#info">View building info</button>
-    </div>
-    <div class="button2">
-      <button class= "AR-view" type="button" href="">Start AR View</button>
-    </div>
-
-    <div class="info" id="info">
-      <div class="info-header">
-        <div class="title">Library Information</div>
-        <button info-close-button class="close-button">&times;</button>
-      </div>
-      <div class="info-body">
-        The CDU Library provides access to research and reference materials, printting and photocopying facilities,
-        PC access and study areas. Opening hours vary during semester breaks and exams periods
-        <a href = "https://www.cdu.edu.au/library">check the library website</a>for the most up-to-date schedule.
-      </div>
-      <div class="">
-        <img class = "image1" src="images/building.png">
-      </div>
-    </div>
-    <div id="popup_overlay"></div>
-
-
-    <!-- End Page content -->
-    <div class="footer-nav">
-      <a href="index.html" style="width: 85%;"><span class="material-icons icons" style="font-size: 1.6rem;">house</span><p style="margin: auto;color: #201644;">Home</p></a>
-      <a href="mostvisited.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">location_city</span><p style="margin: auto;color: gray;">Most Visited</p></a>
-      <a href="AR_View.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">camera</span><p style="margin: auto;color: gray;">AR View</p></a>
-    </div>
-    <script href="bootstrap.bundle.js"></script>
     <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "70%";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-      }
+      const constraints = {
+        video: true
+      };
+      
+      const video = document.querySelector('video');
+      
+      navigator.mediaDevices.getUserMedia(constraints).
+        then((stream) => {video.srcObject = stream});
+      
+      const hdConstraints = {
+        video: {width: {exact: 375}, height: {min: 667}}
+      };
 
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.body.style.backgroundColor = "white";
-      }
-    </script>
+      navigator.mediaDevices.getUserMedia(hdConstraints).
+        then((stream) => {video.srcObject = stream});
+      /*
+      const vgaConstraints = {
+        video: {width: {exact: 640}, height: {exact: 480}}
+      };
+
+      navigator.mediaDevices.getUserMedia(vgaConstraints).
+        then((stream) => {video.srcObject = stream});
+      */
+      
+      </script>
   </body>
 </html>
