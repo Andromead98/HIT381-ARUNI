@@ -23,8 +23,8 @@ if (hasGetUserMedia()) {
           min: 240,
           max: 720,
         },
-        facingmode: {
-          exact: "environment"
+        facingMode: {
+          ideal: "environment"
         }
       }
   };
