@@ -219,7 +219,15 @@ button{
 
 
 
+/* arview start */
 
+#arview {
+  position: fixed;
+  max-width: 430px;
+  top: 25%;
+  bottom: 25%;
+  transform: rotate(90deg);
+  }
 
 
 /* Footer navigation Start */
