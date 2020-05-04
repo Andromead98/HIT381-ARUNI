@@ -24,7 +24,7 @@ if (hasGetUserMedia()) {
           max: 720,
         },
         facingmode: {
-          exact: "Environment"
+          exact: "environment"
         }
       }
   };
