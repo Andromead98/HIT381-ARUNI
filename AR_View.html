@@ -15,11 +15,51 @@
 
   </head>
   <body>
-    
+    <header class="header-nav">
+      <span class="nav-icon" onclick="openNav()">&#9776;</span>
+      <h2 class="h2-main">CDU Casuarina Campus</h2>
+      <div class="break" style="flex-basis: 100%;height:0;"></div>
+      <a class="search-btn" href="voicesearch.html"><input type="button" value="Feeling lost? Use this Building Search 🔍" class="search-btn"></input></a>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 class="form-h2 navforms">Addtional</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="events.html">Upcoming events</p></a>
+        </div>
+        <h2 class="form-h2 navforms">Settings</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="changecampus.html">Change Campus</p></a>
+          <p><a href="help.html">Help</a></p>
+        </div>
+      </div>
+    </header>
+    <!-- Page Content here-->
+
     <div class="videocontainer">
       <video id="arview" autoplay></video>
     </div>
-    
+
+    <!-- End Page content -->
+    <div class="footer-nav">
+      <a href="index.html" style="width: 85%;"><span class="material-icons icons" style="font-size: 1.6rem;">house</span><p style="margin: auto;color: #201644;">Home</p></a>
+      <a href="mostvisited.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">location_city</span><p style="margin: auto;color: gray;">Most Visited</p></a>
+      <a href="AR_View.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">camera</span><p style="margin: auto;color: gray;">AR View</p></a>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "70%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
     <script defer src="js/arscript.js"></script>
+    
   </body>
 </html>
