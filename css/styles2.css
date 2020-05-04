@@ -206,15 +206,6 @@
   cursor: pointer;
 }
 
-.goback__button{
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-
-}
 
 
 .info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9, .info10, .info11, .info12,
