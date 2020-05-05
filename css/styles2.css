@@ -410,19 +410,10 @@ img{
 /* Media Queires for buttons*/
 
 @media screen and (max-width: 1024px){
-  .Security, .LibraryLocation, .UniPrint, .CDUBookshop, .ITKiosk, .PostOffice, .Menzies, .CYCM, .UglyDuck, .ArtHouse, .MalNairn, .CDUGallery, .ChineseGarden {
-    width: 30%;
-    font-size: 14px;
-    height: 40px;
-  }
-  .StudentCentral, .LunchRoom, .Childcare{
-    width: 30%;
-    font-size: 13px;
-    height: 40px;
-  }
-    .UniversityTheatre, .NanGiese, .IndonesianGarden {
-    width: 30%;
-    font-size: 11.5px;
+  .StudentCentral, .Security, .LibraryLocation, .UniPrint, .CDUBookshop, .ITKiosk, .Childcare, .PostOffice, .Menzies, .CYCM, .UglyDuck, .ArtHouse, .LunchRoom,
+  .ChineseGarden, .IndonesianGarden, .MalNairn, .UniversityTheatre, .NanGiese, .CDUGallery {
+    width: 45.5%;
+    font-size: .85rem;
     height: 40px;
   }
 }
