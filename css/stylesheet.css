@@ -226,8 +226,8 @@ button{
   height: 100%;
 }
 
-/*Events page css start*/
-.CDUEvents{
+/*Events and Help page css start*/
+.CDUEvents, .CDUHelp{
   border: 1px solid #007a87;
   background-color:#007a87;
   width: 100%;
@@ -283,7 +283,15 @@ button{
   width: 100%;
 }
 
-/*Events page css end*/
+/*Events and Help page css end*/
+/*Media Querey*/
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (min-width: 480px){
+  
+}
 
 /* Footer navigation Start */
 .footer-nav{

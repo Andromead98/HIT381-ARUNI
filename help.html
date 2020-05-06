@@ -30,17 +30,43 @@
         </div>
       </div>
     </header>
-    <!-- Page Content here (Put your page stuff here)-->
+    <!-- Page Content here (Put your page stuff here)
     <h1>Help</h1>
     <h2>Map screen</h2>
     <p>Use the map to select a building to view more info</p>
-    <h2>Most visited</h2>
+    <h2>Most visited</h2>-->
 
+    <div class="CDUHelp">
+      <div class="CDUTextTwo">ARUNI Help</div>
+    </div>
+    <div class="ContentBox">
+      <p>On this screen you can find tips and tricks on how to use ARUNI</p>
+      <button class = "accordion">Map Screen <i class="arrow down"></i></button>
+      <div class="panel">
+        <p>To zoom out on the Map, use your thumb and forefinger to pinch the map.</p>
+        <p>To zoom in on the Map, use your thumb and forefinger and push apart.</p>
+        <p>To select a building on the Map, use your finger and tap an Icon or Building Name.</p>
+      </div>
 
+      <button class = "accordion">Most Visited <i class="arrow down"></i></button>
+      <div class="panel">
+        <p>To view more information about a building, use your finger and tap on a button.</p>
+        <p>To view further building information, tap on the 'View Building Info' after selecting a button.</p>
+      </div>
 
-
-
-
+      <button class = "accordion">Other Information <i class="arrow down"></i></button>
+      <div class="panel">
+        <p>To view a more traditional Map, follow the links below:</p>
+        <p><a href="https://www.cdu.edu.au/sites/default/files/campus_maps/CASmap12.pdf">Casuarina Campus</a>
+          <br>
+            <a href="https://www.cdu.edu.au/sites/default/files/campus_maps/palm_map.pdf">Palmerston Campus</a>
+          <br>
+            <a href="https://www.cdu.edu.au/files/2019-08/katherine-campus-map.pdf">Katherine Campus</a>
+          <br>
+            <a href="https://www.cdu.edu.au/sites/default/files/campus_maps/alice-map.pdf">Alice Springs Campus</a>
+        </p>
+      </div>
+    </div>
 
     <!-- End Page content -->
     <div class="footer-nav">
@@ -58,6 +84,22 @@
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
         document.body.style.backgroundColor = "white";
+      }
+
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++){
+        acc[i].addEventListener("click", function(){
+          this.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block"){
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block"
+          }
+        });
       }
     </script>
   </body>
