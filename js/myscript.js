@@ -46,7 +46,7 @@ function openInfo(info2) {
 
 function closeInfo(info2) {
   if (info2 == null) return
-  info1.classList.remove('active')
+  info2.classList.remove('active')
   popup_overlay.classList.remove('active')
 }
 
