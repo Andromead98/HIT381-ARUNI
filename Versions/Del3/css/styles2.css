@@ -1,0 +1,440 @@
+/* Side navigation Start - Code modifed from original (https://www.w3schools.com/howto/howto_js_sidenav.asp)*/
+.header-nav{
+  border: 1px solid #201644;
+  background-color:white;
+  padding-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.h2-main{
+  margin: auto;
+  color: #201644;
+  font-size:1.6rem;
+}
+
+.nav-icon{
+  font-size:30px;
+  cursor:pointer;
+  color:#201644;
+  padding: 1px 0 0 10px;
+}
+
+.menu{
+  font-size: 26px;
+  color: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  padding-top: 0;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.navforms{
+  margin: 15px 0px 10px 15px;
+}
+
+.forms{
+  margin: 0px 0px 10px 0px;
+  padding-left:40px;
+  background-color: #f9fafc;
+}
+
+.navforms a{
+  font-size: 1rem;
+  padding-left: 0px;
+}
+
+
+.form-h2{
+  color:#48535f;
+  font-weight:400;
+  font-size: 1.4rem;
+}
+
+.search-btn{
+  margin: auto;
+  width: 98%;
+}
+/* Side navigation End */
+
+/* Footer navigation Start */
+.footer-nav{
+  border-top: solid lightgrey 1px;
+  background-color: white;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  position: fixed;
+  text-align: center;
+  padding: 5px 0 5px 0;
+  font-size: .85rem;
+}
+
+.footer-nav a{
+  display: inline-block;
+  color: White;
+  text-decoration: none;
+  width: 100%;
+}
+
+.icons{
+  color: #201644;
+}
+/* Footer navigation End */
+/* Ann's CSS starts*/
+
+.body{
+}
+
+/*text styles */
+.CDUTextTwo{
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+.CDUTextThree{
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+/* Box Styles */
+.BoxBody{
+  width: 100%;
+  border-spacing: 0,0;
+}
+
+.CDUMostVisited{
+  border: 1px solid #007a87;
+  background-color:#007a87;
+  width: 100%;
+  height: 50px;
+}
+
+.FacilitiesServices, .CDUGardensGalleries{
+  border: 1px solid #008593;
+  background-color:#008593;
+  width: 100%;
+  height: 50px;
+}
+
+/* Button Styles */
+.ButtonBox{
+  padding-bottom: 10px;
+  padding-left: 19px;
+}
+
+.ButtonLine{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.StudentCentral, .Security, .LibraryLocation, .UniPrint, .CDUBookshop, .ITKiosk, .Childcare, .PostOffice, .Menzies, .CYCM, .UglyDuck, .ArtHouse, .LunchRoom,
+.ChineseGarden, .IndonesianGarden, .MalNairn, .UniversityTheatre, .NanGiese, .CDUGallery {
+  border: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #201644;
+  background-color: #A8C5C8;
+  cursor: pointer;
+}
+
+.goback__button{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+
+}
+
+.viewbuildinginfo{
+  border: 1px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: #201644;
+  background-color: #A8C5C8;
+  cursor: pointer;
+
+}
+
+.ButtonAR{
+  padding-top: 5px;
+  padding-left: 0px;
+}
+
+h3{
+  text-align: center;
+}
+
+
+.AR-view{
+  border: 1px;
+  color: #201644;
+  background-color: #A8C5C8;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.buildingphoto img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.info1, .info2, .info3, .info4, .info5, .info6, .info7, .info8, .info9, .info10, .info11, .info12,
+.info13, .info14, .info15, .info16, .info17, .info18, .info19{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 180ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 1;
+  background-color: white;
+  width: 600px;
+  max-width: 80%;
+}
+
+.box{
+  width:1px;
+}
+
+.info1.active, .info2.active, .info3.active, .info4.active, .info5.active, .info6.active, .info7.active, .info8.active,
+.info9.active, .info10.active, .info11.active, .info12.active, .info13.active, .info14.active, .info15.active, .info16.active,
+ .info17.active, .info18.active, .info19.active  {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.info-header1, .info-header2,.info-header3, .info-header4, .info-header5, .info-header6, .info-header7, .info-header8,
+.info-header9, .info-header10, .info-header11, .info-header12, .info-header13, .info-header14, .info-header15, .info-header16,
+.info-header17, .info-header18, .info-header19{
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.info-header1 .title, .info-header2 .title, .info-header3 .title, .info-header4 .title, .info-header5 .title, .info-header6 .title, .info-header7 .title,
+.info-header8 .title, .info-header9 .title, .info-header10 .title, .info-header11 .title, .info-header12 .title, .info-header13 .title,
+.info-header14 .title,.info-header15 .title, .info-header16 .title, .info-header17 .title, .info-header18 .title, .info-header19 .title{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.info-header1 .close-button, .info-header2 .close-button, .info-header3 .close-button, .info-header4 .close-button, .info-header5 .close-button,
+.info-header6 .close-button, .info-header7 .close-button, .info-header8 .close-button, .info-header9 .close-button, .info-header10 .close-button,
+.info-header11 .close-button, .info-header12 .close-button, .info-header13 .close-button, .info-header14 .close-button, .info-header15 .close-button
+, .info-header16 .close-button, .info-header17 .close-button, .info-header18 .close-button, .info-header19 .close-button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.info-body1, .info-body2, .info-body3， .info-body4, .info-body5, .info-body6, .info-body7, .info-body8, .info-body9, .info-body10,
+.info-body11, .info-body12, .info-body13, .info-body14, .info-body15, .info-body16, .info-body17, .info-body18, .info-body19{
+  padding: 10px 15px;
+}
+
+#popup_overlay{
+  position: fixed;
+  opacity: 0;
+  transition: 180ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .3);
+  pointer-events: none;
+}
+
+#popup_overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+img{
+  vertical-align: middle;
+  border-right: none;
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 1024px){
+  .buildingphoto{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .buildingphoto{
+    width: 100%;
+    height: 100%;
+  }
+  .buildingphoto img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .viewbuildinginfo{
+    border: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #201644;
+    background-color: #A8C5C8;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .ButtonAR{
+    padding-top: 5px;
+    padding-left: 0px;
+  }
+
+  .AR-view{
+    border: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #201644;
+    background-color: #A8C5C8;
+    cursor: pointer;
+  }
+  .info {
+    width: 600px;
+    max-width: 80%;
+  }
+  img{
+    vertical-align: middle;
+    border-right: none;
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+  .viewbuildinginfo{
+    border: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #201644;
+    background-color: #A8C5C8;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .ButtonAR{
+    padding-top: 5px;
+    padding-left: 0px;
+  }
+
+  .AR-view{
+    border: 1px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #201644;
+    background-color: #A8C5C8;
+    cursor: pointer;
+  }
+  .info {
+    width: 600px;
+    max-width: 80%;
+  }
+  img{
+    vertical-align: middle;
+    border-right: none;
+    width: 100%;
+  }
+
+}
+
+
+/* Media Queires for buttons*/
+
+@media screen and (max-width: 1024px){
+  .StudentCentral, .Security, .LibraryLocation, .UniPrint, .CDUBookshop, .ITKiosk, .Childcare, .PostOffice, .Menzies, .CYCM, .UglyDuck, .ArtHouse, .LunchRoom,
+  .ChineseGarden, .IndonesianGarden, .MalNairn, .UniversityTheatre, .NanGiese, .CDUGallery {
+    width: 45.5%;
+    font-size: .85rem;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .StudentCentral, .Security, .LibraryLocation, .UniPrint, .CDUBookshop, .ITKiosk, .Childcare, .PostOffice, .Menzies, .CYCM, .UglyDuck, .ArtHouse, .LunchRoom,
+  .ChineseGarden, .IndonesianGarden, .MalNairn, .UniversityTheatre, .NanGiese, .CDUGallery  {
+    width: 32%;
+    height: 60px;
+    font-size: 25px;
+  }
+}
+
+
+
+#info__layer {
+	display: block;
+}
+/*body*/
+
+#building_info1,#building_info2,#building_info3,#building_info4,#building_info5,#building_info6,#building_info7,#building_info8,#building_info9,#building_info10,
+#building_info11,#building_info12,#building_info13,#building_info14,#building_info15,#building_info16,#building_info17,#building_info18,#building_info19{
+  display: none;
+}
