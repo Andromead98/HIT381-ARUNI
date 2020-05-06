@@ -31,18 +31,56 @@
       </div>
     </header>
     <!-- Page Content here (Put your page stuff here)-->
-    <h1>CDU Events</h1>
-    <h2>Current events</h2>
-    <p>Current events here</p>
-    <h2>Future events</h2>
-    <p>Future events here</p>
-
-
-
-
-
-
-
+    <div class="CDUEvents">
+      <div class="CDUTextTwo">CDU Events</div>
+    </div>
+    <div class="ContentBox">
+      <button class = "accordion">Current Events <i class="arrow down"></i></button>
+      <div class="panel">
+        <h3>Livestream Music Concerts</h3>
+        <p>Every Thursday noon, music is being live-streamed from the Charles Darwin University theatre into homes around the world.</p>
+        <p>9 April 2020 to 28 May 2020, Online.
+        <br> Art/Exhibition
+        </p>
+        <hr class = "BreakLine">
+        <h3>You Can't Ask That! Nurses Edition</h3>
+        <p>A webinar to celebrate International Nurses Day, and International Year of the Nurse and Midwife, the College of Nursing and Midwifery at Charles Darwin University in collaboration with NT Health.</p>
+        <p>12 May 2020, Online.
+        <br> Seminar/Lecture/Forum
+        </p>
+      </div>
+      <button class = "accordion">Last Month's Events <i class="arrow down"></i></button>
+      <div class="panel">
+        <h3>Midwifery: Celebrate, Demonstrate, Mobilise, Unite</h3>
+        <p>A webinar to celebrate the International Day of the Midwife</p>
+        <p>5 May 2020, Online
+        <br> Seminar/Lecture/Forum
+        </p>
+        <hr class = "BreakLine">
+        <h3>Clubs Carnival</h3>
+        <p>Student Groups are one of the best and easiest ways to get involved, meet new people and have some fun at CDU.</p>
+        <p>18 March 2020, Casuarina Campus
+        <br> Fair/Expo/Festival
+        </p>
+        <hr class = "BreakLine">
+        <h3>APR.Intern INTERNSHIP BRIEFING</h3>
+        <p>Connecting PhD students with industry through short-term internships. Facillitated by Professor Gary Hogan, this briefing will detail internships currently available to PhD students.</p>
+        <p>12 March 2020, Casuarina
+        <br> Research
+        </p>
+        <br>
+        <br>
+        <br>
+      </div>
+      <button class = "accordion">Register Your Event and Other Information <i class="arrow down"></i></button>
+      <div class="panel">
+        <h3>Register Your Event</h3>
+        <p>You can host an event at CDU, by following the <a href=https://www.cdu.edu.au/events/register>link</a></p>
+        <hr class="BreakLine">
+        <h3>More Information about Past Events</h3>
+        <p>View our archive of Past Events by following the <a href =https://www.cdu.edu.au/events/past-events>link</a> </p>
+      </div>
+    </div>
 
 
     <!-- End Page content -->
@@ -62,6 +100,24 @@
         document.getElementById("mySidenav").style.width = "0";
         document.body.style.backgroundColor = "white";
       }
+
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++){
+        acc[i].addEventListener("click", function(){
+          this.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block"){
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block"
+          }
+        });
+      }
+
+
     </script>
   </body>
 </html>
