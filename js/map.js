@@ -10,7 +10,7 @@
    ];
      var place = locations[i];
       var mapOptions = {
-        zoom: 12,
+        zoom: 16,
         center: new google.maps.LatLng(-12.3728883, 130.8696114),
         mapTypeId: google.maps.MapTypeId.ROADMAP,
       };
@@ -56,11 +56,6 @@
         $("#locationpicker").click(function(){
         $("#locationpicker").hide();
            })});
-         function hideChoosefile(){
-           var choosefile = document.getElementById('locationpicker');
-           choosefile.addEventListener('click', showMap, false);
-         }
          function showMap(){
             document.getElementById('map-canvas').style.display = "block";
          }
-         window.addEventListener('load', hideChoosefile, false)
