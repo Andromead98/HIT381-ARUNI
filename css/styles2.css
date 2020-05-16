@@ -40,10 +40,11 @@
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.3rem;
   color: #818181;
   display: block;
   transition: 0.3s;
+  padding-left: 0px;
 }
 
 .sidenav a:hover {
@@ -74,11 +75,6 @@
   background-color: #f9fafc;
 }
 
-.navforms a{
-  font-size: 1rem;
-  padding-left: 0px;
-}
-
 
 .form-h2{
   color:#48535f;
@@ -88,7 +84,15 @@
 
 .search-btn{
   margin: auto;
-  width: 98%;
+  width: 97%;
+  border-radius: 20px;
+  background-color: #A8C5C8;
+  box-shadow: 0;
+}
+
+a .search-btn {
+  margin: auto;
+  width: 100%;
 }
 /* Side navigation End */
 
