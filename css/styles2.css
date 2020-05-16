@@ -141,6 +141,14 @@ a .search-btn {
   font-size: 20px;
 }
 
+.infopage{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+
 /* Box Styles */
 .BoxBody{
   width: 100%;
