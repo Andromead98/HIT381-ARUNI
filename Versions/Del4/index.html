@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <meta name="Description" content="ARUNI">
+    <title>ARUNI</title>
+  </head>
+  <body>
+    <header class="header-nav">
+      <span class="nav-icon" onclick="openNav()">&#9776;</span>
+      <h2 class="h2-main">CDU Casuarina Campus</h2>
+      <div class="break" style="flex-basis: 100%;height:0;"></div>
+      <a class="search-btn" href="voicesearch.html"><input type="button" value="Building Search 🔍" class="search-btn"></input></a>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 class="form-h2 navforms">Addtional</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="events.html">Upcoming events</p></a>
+        </div>
+        <h2 class="form-h2 navforms">Settings</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="changecampus.html">Change Campus</p></a>
+          <p><a href="help.html">Help</a></p>
+        </div>
+      </div>
+
+
+    </header>
+    <!-- Page Content here (Put your page stuff here)-->
+    <!--
+    <div class="google-maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.7083141454386!2d130.86865301730023!3d-12.372207866357746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cc0935c60807e7d%3A0x2a4fef1c2399f57c!2sInformation%20Center!5e0!3m2!1sen!2sau!4v1587778670881!5m2!1sen!2sau"
+      height="450px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+    </div>
+    -->
+    <div id="map-canvas"></div>
+
+
+
+
+    <!-- End Page content -->
+    <div class="footer-nav">
+      <a href="index.html" style="width: 85%;"><span class="material-icons icons" style="font-size: 1.6rem;">house</span><p style="margin: auto;color: #201644;">Home</p></a>
+      <a href="cdu_services.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">location_city</span><p style="margin: auto;color: gray;">CDU Services</p></a>
+      <a href="AR_View.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">camera</span><p style="margin: auto;color: gray;">AR View</p></a>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDxvEHjEAdQMGyoL87GNI4j2WMcontfK0"></script>
+    <script type="text/javascript" src="./js/map.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "70%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="Description" content="ARUNI">
+    <title>ARUNI</title>
+  </head>
+  <body>
+    <header class="header-nav">
+      <span class="nav-icon" onclick="openNav()">&#9776;</span>
+      <h2 class="h2-main">CDU Casuarina Campus</h2>
+      <div class="break" style="flex-basis: 100%;height:0;"></div>
+      <a class="search-btn" href="voicesearch.html"><input type="button" value="Building Search 🔍" class="search-btn"></input></a>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 class="form-h2 navforms">Addtional</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="events.html">Upcoming events</p></a>
+        </div>
+        <h2 class="form-h2 navforms">Settings</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="changecampus.html">Change Campus</p></a>
+          <p><a href="help.html" style="color: #007a87;">Help</a></p>
+        </div>
+      </div>
+    </header>
+    <!-- Page Content here (Put your page stuff here) -->
+
+    <div class="CDUHelp">
+      <div class="CDUTextTwo">ARUNI Help</div>
+    </div>
+    <div class="ContentBox">
+      <p style="padding:0 18px;">On this screen you can find tips and tricks on how to use ARUNI</p>
+      <button class = "accordion">Map Screen <i class="arrow down"></i></button>
+      <div class="panel">
+        <p>To zoom out on the Map, use your thumb and forefinger to pinch the map.</p>
+        <p>To zoom in on the Map, use your thumb and forefinger and push apart.</p>
+        <p>To select a building on the Map, use your finger and tap an Icon or Building Name.</p>
+      </div>
+
+      <button class = "accordion">Most Visited <i class="arrow down"></i></button>
+      <div class="panel">
+        <p>To view more information about a building, use your finger and tap on a button.</p>
+        <p>To view further building information, tap on the 'View Building Info' after selecting a button.</p>
+      </div>
+
+      <button class = "accordion">Other Information <i class="arrow down"></i></button>
+      <div class="panel">
+        <p>In the event that ARUNI's Maps go offline, the following links will lead to each respective Campus.</p>
+        <p><a href="https://www.cdu.edu.au/sites/default/files/campus_maps/CASmap12.pdf">Casuarina Campus</a>
+          <br>
+            <a href="https://www.cdu.edu.au/sites/default/files/campus_maps/palm_map.pdf">Palmerston Campus</a>
+          <br>
+            <a href="https://www.cdu.edu.au/files/2019-08/katherine-campus-map.pdf">Katherine Campus</a>
+          <br>
+            <a href="https://www.cdu.edu.au/sites/default/files/campus_maps/alice-map.pdf">Alice Springs Campus</a>
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <!-- End Page content -->
+    <div class="footer-nav">
+      <a href="index.html" style="width: 85%;"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">house</span><p style="margin: auto;color: gray;">Home</p></a>
+      <a href="cdu_services.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">location_city</span><p style="margin: auto;color: gray;">CDU Services</p></a>
+      <a href="AR_View.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">camera</span><p style="margin: auto;color: gray;">AR View</p></a>
+    </div>
+    <script href="js/bootstrap.bundle.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "70%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+      }
+
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++){
+        acc[i].addEventListener("click", function(){
+          this.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block"){
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block"
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
