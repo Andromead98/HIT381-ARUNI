@@ -44,8 +44,8 @@
 
 
     <div class="footer-nav">
-        <a href="index.html" style="width: 85%;"><span class="material-icons icons" style="font-size: 1.6rem;color: gray">house</span><p style="margin: auto;color: gray;">Home</p></a>
-        <a href="cdu_services.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">location_city</span><p style="margin: auto;color: gray;">CDU Services</p></a>
+        <a href="index.html" style="width: 85%;"><span class="material-icons icons" style="font-size: 1.6rem;">house</span><p style="margin: auto;color: #201644;">Home</p></a>
+        <a href="mostvisited.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">location_city</span><p style="margin: auto;color: gray;">Most Visited</p></a>
         <a href="AR_View.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">camera</span><p style="margin: auto;color: gray;">AR View</p></a>
     </div>
     <script href="bootstrap.bundle.js"></script>
@@ -73,11 +73,12 @@
         function searchResult() {
             var search_element = document.getElementById("search");
             //if (event.key === 'Enter') {
-            var search_val = search_element.value; // search box value.
+            var search_val = (search_element.value).toLowerCase(); // search box value.
 
             var result_state = 0; // the variable to check whether there is result data or not.
             for (var key in link_datas) {
                 if (link_datas.hasOwnProperty(key)) {
+                    key = key.toLowerCase();
                     if (key.indexOf(search_val) > -1) {
                         result_state = 1;
                         document.getElementById("search_result").innerHTML = "";
