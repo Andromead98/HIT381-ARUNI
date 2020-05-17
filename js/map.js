@@ -1,61 +1,33 @@
+var map;
+function initMap() {
+  map = new L.Map("map", {
+      center: new L.LatLng(-12.37, 130.87),
+      zoom: 14,
+      layers: new L.TileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png")
+  });
+}
 
+function addMarker(lat, lng) {
+  var marker = new L.Marker(new L.LatLng(lat, lng));
+  marker.bindPopup("You are here");
+  map.addLayer(marker);
+  return marker;
+}
 
-    var map;
-    var locations = [
-     ['University', -12.3728883, 130.8696114, 4,'Nightcliff Donation Centre'],
-     //['Casuarina ', -12.376717, 130.878238, 3,'Casuarina Donation Centre'],
-     //['Darwin ', -12.426167, 130.840380, 2, 'Darwin Donation Centre'],
-     //['Coconut Grove', -12.396830, 130.854272, 1, 'Coconut Grove Donation Centre'],
+function moveMarker(marker, lat, lng) {
+  var newLatLng = new L.LatLng(lat, lng);
+  marker.setLatLng(newLatLng);
+  return marker;
+}
 
-   ];
-     var place = locations[i];
-      var mapOptions = {
-        zoom: 16,
-        center: new google.maps.LatLng(-12.3728883, 130.8696114),
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-      };
-      map = new google.maps.Map(document.getElementById('map-canvas'),
-          mapOptions);
-
-    var infowindow = new google.maps.InfoWindow();
-
-      var marker, i;
-      var theDiv = document.getElementById("location");
-
-      for (i = 0; i < locations.length; i++) {
-        marker = new google.maps.Marker({
-          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-          map: map,
-          name: locations[i][4],
-          title:locations[i][0],
-          label: {
-     text: locations[i][0],
-     color: '#000000',
-     fontSize: '12px',
-     fontWeight: "bold"
-
-   }});
-
-        google.maps.event.addListener(marker, 'click', (function(marker, i) {
-          return function() {
-            infowindow.setContent(locations[i][0]);
-            infowindow.open(map, marker);
-          }
-
-        })(marker, i));
-        //google.maps.event.addListener(marker, 'click', function() {
-          //theDiv.innerHTML += this.name; ;});
-        google.maps.event.addListener(marker, 'click', function() {
-            document.getElementById('map-canvas').style.display = "block" ;});
-      }
-      $(document).ready(function(){
-      $('#submitrequest').click(function(){
-            alert("Your Pickup Request has been submitted");
-         })});
-      $(document).ready(function(){
-        $("#locationpicker").click(function(){
-        $("#locationpicker").hide();
-           })});
-         function showMap(){
-            document.getElementById('map-canvas').style.display = "block";
-         }
+initMap();
+if("geolocation" in navigator) {
+} else {
+}
+navigator.geolocation.getCurrentPosition(
+    function(position) {
+        console.log(position);
+        console.log('latitude: ${position.coords.latitude}, longitude:${position.coords.longitude}');
+        addMarker(position.coords.latitude,position.coords.longitude);
+    }
+)

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta name="Description" content="ARUNI">
     <title>ARUNI</title>
   </head>
@@ -36,7 +36,7 @@
     <!-- Page Content here (Put your page stuff here)-->
 
 
-    <div id="map-canvas"></div>
+    <div id="map" onclick="location"></div>
 
 
     <!-- End Page content -->
@@ -45,9 +45,7 @@
       <a href="cdu_services.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">location_city</span><p style="margin: auto;color: gray;">CDU Services</p></a>
       <a href="AR_View.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">camera</span><p style="margin: auto;color: gray;">AR View</p></a>
     </div>
-    <script src="./js/bootstrap.bundle.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDxvEHjEAdQMGyoL87GNI4j2WMcontfK0"></script>
-    <script type="text/javascript" src="./js/map.js"></script>
+
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "70%";
@@ -59,5 +57,10 @@
         document.body.style.backgroundColor = "white";
       }
     </script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src ="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src ="js/myscript.js"></script>
+
+
   </body>
 </html>
