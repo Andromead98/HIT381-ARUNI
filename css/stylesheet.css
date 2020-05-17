@@ -124,7 +124,10 @@ a .search-btn {
   left: 0;
   width: 100%;
   height: 78%;
+  z-index: -1;
+
 }
+
 
 .location{
   background-color: #4CAF50;
