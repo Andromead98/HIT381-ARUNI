@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="Description" content="ARUNI">
+    <script defer src="js/myscript.js"></script>
+    <title>ARUNI</title>
+
+  </head>
+  <body>
+    <header class="header-nav">
+      <span class="nav-icon" onclick="openNav()">&#9776;</span>
+      <h2 class="h2-main">CDU Casuarina Campus</h2>
+      <div class="break" style="flex-basis: 100%;height:0;"></div>
+      <a class="search-btn" href="voicesearch.html"><input type="button" value="Building Search 🔍" class="search-btn"></input></a>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h2 class="form-h2 navforms">Addtional</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="events.html">Upcoming events</p></a>
+        </div>
+        <h2 class="form-h2 navforms">Settings</h2>
+        <hr style="margin-bottom:0;"/>
+        <div class="navforms forms">
+          <p><a href="changecampus.html">Change Campus</p></a>
+          <p><a href="help.html">Help</a></p>
+        </div>
+      </div>
+    </header>
+    <!-- Page Content here (Put your page stuff here)-->
+    <div class="BoxBody">
+      <div class="CDUMostVisited">
+        <div class="CDUTextTwo">CDU Services</div>
+      </div>
+
+
+    <div id="info__layer">
+      <div class="ButtonBox">
+        <div class = "ButtonLine">
+          <button class= "StudentCentral" onclick="show_building(1)">Student Central</button>
+          <button class = "Security" onclick="show_building(2)">Security</button>
+        </div>
+        <div class = "ButtonLine">
+          <button class= "LibraryLocation" onclick="show_building(3)">Library</button>
+          <button class= "UniPrint" onclick="show_building(4)">UniPrint</button>
+        </div>
+        <div class = "ButtonLine">
+          <button class= "CDUBookshop" onclick="show_building(5)">Bookshop</button>
+          <button class= "ITKiosk" onclick="show_building(6)">IT Kiosk</button>
+        </div>
+        <div class = "ButtonLine">
+          <button class= "Childcare" onclick="show_building(7)">Childcare Centre</button>
+          <button class= "PostOffice" onclick="show_building(8)">Post Office</button>
+        </div>
+        <div class = "ButtonLine">
+          <button class= "Menzies" onclick="show_building(9)"> Menzies</button>
+          <button class= "CYCM" onclick="show_building(10)">CYCM</button>
+        </div>
+        <div class = "ButtonLine">
+          <button class= "UglyDuck" onclick="show_building(11)">Ugly Duckling</button>
+          <button class= "ArtHouse" onclick="show_building(12)">The Arthouse</button>
+        </div>
+        <div class="ButtonLine">
+          <button class= "LunchRoom" onclick="show_building(13)">The Lunch Room</button>
+        </div>
+      </div>
+        <div class="CDUGardensGalleries">
+          <div class="CDUTextThree">CDU Gardens, Galleries & Theatres</div>
+        </div>
+        <div class="ButtonBox">
+          <div class="ButtonLine">
+            <button class="ChineseGarden" onclick="show_building(14)">Chinese Garden</button>
+            <button class="IndonesianGarden" onclick="show_building(15)">Indonesian Garden</button>
+          </div>
+          <div class="ButtonLine">
+            <button class="MalNairn" onclick="show_building(16)">Mal Nairn</button>
+            <button class= "UniversityTheatre" onclick="show_building(17)">University Theatre</button>
+          </div>
+          <div class="ButtonLine">
+            <button class= "NanGiese" onclick="show_building(18)">Nan Giese Gallery</button>
+            <button class= "CDUGallery" onclick="show_building(19)">Art Gallery</button>
+          </div>
+        </div>
+      </div>
+
+    <div id="building_info1">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Student Central</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(1)"></div>
+        <h2 class="h2-building">Orange 1.1</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+        <div class="ButtonAR">
+          <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+        </div>
+        <div class="buildingphoto">
+          <img src="images/studentcentral.png">
+        </div>
+      </div>
+
+
+    <div id="building_info2">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Security</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(2)"></div>
+        <h2 class="h2-building">Orange 2.1</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/security.png">
+      </div>
+    </div>
+
+
+    <div id="building_info3">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Library</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(3)"></div>
+        <h2 class="h2-building">Red 8</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          The CDU Library provides access to research and reference materials, printting and photocopying facilities,
+          PC access and study areas. Opening hours vary during semester breaks and exams periods
+          <a href = "https://www.cdu.edu.au/library">check the library website</a>for the most up-to-date schedule.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/library.png">
+      </div>
+    </div>
+
+
+    <div id="building_info4">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">UniPrint</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(4)"></div>
+        <h2 class="h2-building">Purple 4</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          UniPrint combines the age-old craft of printing with modern technology to provide a comprehensive range of services,
+          including prepress, digital and offset printing, and multiple finishing options.
+
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/uniprint.png">
+      </div>
+    </div>
+
+    <div id="building_info5">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Bookshop</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(5)"></div>
+        <h2 class="h2-building">Red 1.1.05</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+        We offer free postage in Australia four weeks before semester commencement up until census date or the take the option of click and collect with our extended trading hours.
+        Enter the code, SSAF in the discount code section of the checkout, ﻿for free postage.
+        On Casuarina campus you can find us on the ground floor of Red Building 1, at the end of Central Place of Charles Darwin University.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/bookshop.png">
+      </div>
+    </div>
+
+    <div id="building_info6">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">IT Kiosk</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(6)"></div>
+        <h2 class="h2-building">Red 1.1.20</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          The IT Kiosk is an extension of the ITMS Service Desk and provides a physical space where CDU staff and students can obtain face-to-face support for CDU IT and Communications services.
+          We provide students with communication technologies support, and staff with technology support in teaching and learning spaces. Our expertise includes the support of CDU's VoIP telephones,
+          video conferencing, Wifi networks and connectivity, PDA's, smartphones and web-based applications.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/IT_kiosk.png">
+      </div>
+    </div>
+
+
+    <div id="building_info7">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Childcare Centre</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(7)"></div>
+        <h2 class="h2-building">Green 3</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          The CDU childcare centre is tucked away on campus and provides support to the community and staff and students of CDU.
+          You can trust that while you are working or studying, we will be taking the best care of your little one.
+          We have indoor and outdoor play areas, hands on activities and a team passionate about children. Call the Centre Manager to have a chat today.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/childcarecentre.png">
+      </div>
+    </div>
+
+    <div id="building_info8">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Post Office</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(8)"></div>
+        <h2 class="h2-building">Red 2</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Australia Post has a shop on Charles Darwin University's Casuarina campus.
+          At the on-campus post office you can pay many of your bills (including phone, PowerWater, Darwin City Council rates and dog registration),
+          recharge your mobile and calling cards, pick up your favourite magazines and choose a gift for any occasion from our extensive range.
+          The post office also provides PO Boxes and is an agent for the Commonwealth Bank.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/postoffice.png">
+      </div>
+    </div>
+
+    <div id="building_info9">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Menzies</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(9)"></div>
+        <h2 class="h2-building">Red 9</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Menzies School of Health Research is one of Australia’s leading medical research institutes.
+          We are dedicated to improving the health and wellbeing of Indigenous Australians, and are global leaders in tropical research in to life-threatening illnesses.
+
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/menzies.png">
+      </div>
+    </div>
+
+
+    <div id="building_info10">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">CYCM</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(10)"></div>
+        <h2 class="h2-building">Oragne 6.1</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+      The Centre for Youth Music (CYCM) teaches music in a manner that is fun, educational and tailored to each student's individual needs and goals.
+      The CYCM offers music curriculum for students of all ages starting from the "very young" in the "Junior Music Program" right through to the "young at heart" adults in our "Non-Award Programs".
+      Catering for the beginner to the more advanced student, the CYCM provides instrumental, vocal and theory tuition as well as offering a diverse and exciting range of ensemble programs.
+      At the CYCM, students work with the Northern Territory's top music professionals and leading visiting musicians, who are committed to sharing their musical knowledge and experience by offering accessible and affordable music instruction and performance opportunities for all in our community.
+
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/cycm.png">
+      </div>
+    </div>
+
+
+    <div id="building_info11">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Ugly Ducking</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(11)"></div>
+        <h2 class="h2-building">Red 1.1</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          * Freshly brewed coffee and assorted teas
+          * Wide variety of organic and cold pressed beverages
+          * À la carte breakfast/brunch menu
+          * Gourmet sandwiches and salad bowls
+          * Freshly baked homemade pies and pastries
+          * Homemade cakes, tarts, muffins, donuts & cookies
+          Opening hours: 7.30am to 4.00pm Monday - Friday (hours may vary during semester breaks).
+          Phone: (08) 8946 6163
+          Email: uglyduckling@cdu.edu.au
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/ugly.png">
+      </div>
+    </div>
+
+    <div id="building_info12">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">The Arthouse</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(12)"></div>
+        <h2 class="h2-building">Blue 2.1</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Coffees, teas and other beverages
+          Modern Australian cuisine
+          Locally sourced ingredients
+          Opening hours: 7am - 2.30pm, Monday - Friday
+          (Hours may vary during semester breaks)
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/arthouse.png">
+      </div>
+    </div>
+
+    <div id="building_info13">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">The Lunch Room</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(13)"></div>
+        <h2 class="h2-building">Red 1.2</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Pasta bar – variety of freshly made pasta and bakes
+          Asian food bar – Variety of Asian cuisines
+          Chippery - Burgers, yiros, toasties, pies, chips, fish and roasts
+          Salad/sandwich Bar - Fresh salads, sandwiches, Vietnamese bread rolls
+          Wide variety of chilled drinks
+          Grab & go tea and coffee
+          Opening hours: 9:00am to 3:00pm Monday - Friday (hours may vary during semester breaks).
+          Phone: (08) 8946 7755
+          Email: thelunchroom@cdu.edu.au
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/lunchroom.png">
+      </div>
+    </div>
+
+    <div id="building_info14">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Chinese Garden</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(14)"></div>
+        <h2 class="h2-building">Near Yellow 1</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Charles Darwin University's Chinese Garden is a symbol of the University's interaction with the broader community and an educational,
+          ornamental and recreational resource for the wider community to enjoy.
+          The Chinese Garden is also available for private and community hire.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/chinese.png">
+      </div>
+    </div>
+
+    <div id="building_info15">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Indonesian Garden</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(15)"></div>
+        <h2 class="h2-building">CDU shaded area</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          The Indonesian Garden was designed to celebrate and continue to forge a collaborative friendship between CDU and the Indonesian community in the Northern Territory and Indonesia.
+          The garden is a tranquil space which is ideal for relaxation and contemplation.
+          The Indonesian-inspired wooden hut is an ideal meeting place or stage for small performances, talks, private events or gatherings.
+          The garden is connected to a shaded area, attached to the University, so you can enjoy both outdoor manicured lawns and covered seated spaces.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/indonesian.png">
+      </div>
+    </div>
+
+    <div id="building_info16">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Mal Nairn</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(16)"></div>
+        <h2 class="h2-building">Red 7</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/mal.png">
+      </div>
+    </div>
+
+    <div id="building_info17">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">University Theatre</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(17)"></div>
+        <h2 class="h2-building">Orange 3</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/theatre1.png">
+      </div>
+    </div>
+
+
+
+    <div id="building_info18">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Nan Giese Gallery</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(18)"></div>
+        <h2 class="h2-building">Orange 12.1.02</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/art.png">
+      </div>
+    </div>
+
+    <div id="building_info19">
+      <div class="FacilitiesServices">
+        <div class="CDUTextThree">Art Gallery</div>
+      </div>
+      <div class="sameline">
+        <div class="goback__button" onclick="hide_building(19)"></div>
+        <h2 class="h2-building">Orange 12.1.02</h2>
+      </div>
+      <div class="extra_wrapper">
+        <div class="extra">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+      <div class="ButtonAR">
+        <button class= "AR-view" type="button"><a href="AR_View.html">Start AR View</a></button>
+      </div>
+      <div class="buildingphoto">
+        <img src="images/art.png">
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+  </div>
+
+
+    <!-- End Page content -->
+    <div class="footer-nav">
+      <a href="index.html" style="width: 85%;"><span class="material-icons icons" style="font-size: 1.6rem;color: grey;">house</span><p style="margin: auto;color: grey;">Home</p></a>
+      <a href="cdu_services.html"><span class="material-icons icons" style="font-size: 1.6rem;color: #201644;">location_city</span><p style="margin: auto;color: #201644;">CDU Services</p></a>
+      <a href="AR_View.html"><span class="material-icons icons" style="font-size: 1.6rem;color: gray;">camera</span><p style="margin: auto;color: gray;">AR View</p></a>
+    </div>
+    <script href="js/bootstrap.bundle.js"></script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "70%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>
