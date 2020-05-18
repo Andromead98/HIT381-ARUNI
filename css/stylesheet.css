@@ -15,6 +15,24 @@
 
 }
 
+
+
+.location{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  position: relative;
+  margin: -50px 0px;
+  max-width: 500px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  top: -50px;
+}
 .nav-icon{
   font-size:30px;
   cursor:pointer;
@@ -97,32 +115,37 @@ a .search-btn {
 }
 
 /* Side navigation and header End */
+/* map starts */
 
-/* Google maps Start - Adapted from https://www.ostraining.com/blog/coding/responsive-google-maps/*/
-#map-canvas{
+#map{
   width:400px;
   height: 400px;
   position: absolute;
   left: 0;
   width: 100%;
   height: 78%;
+  z-index: -1;
+
 }
 
-.google-maps {
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: fixed;
-  height: 80%;
-  width: 100%;
+
+.location{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  position: relative;
+  margin: -50px 0px;
+  max-width: 500px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  top: -50px;
 }
-.google-maps iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-}
-/* Google map end */
+/* map ends */
 
 /* Hayden CSS*/
 body{
@@ -302,7 +325,7 @@ button{
 }
 
 @media screen and (min-width: 480px){
-  
+
 }
 
 /* Footer navigation Start */

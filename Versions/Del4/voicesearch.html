@@ -73,11 +73,12 @@
         function searchResult() {
             var search_element = document.getElementById("search");
             //if (event.key === 'Enter') {
-            var search_val = search_element.value; // search box value.
+            var search_val = (search_element.value).toLowerCase(); // search box value.
 
             var result_state = 0; // the variable to check whether there is result data or not.
             for (var key in link_datas) {
                 if (link_datas.hasOwnProperty(key)) {
+                    key = key.toLowerCase();
                     if (key.indexOf(search_val) > -1) {
                         result_state = 1;
                         document.getElementById("search_result").innerHTML = "";
