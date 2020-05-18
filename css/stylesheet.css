@@ -272,6 +272,7 @@ button{
   right: 20px;
   background: none;
   transform: rotate(90deg);
+  z-index: -1
 }
 
 #arstopbtn{
