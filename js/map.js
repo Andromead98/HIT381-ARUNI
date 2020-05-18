@@ -2,7 +2,7 @@ var map;
 function initMap() {
   map = new L.Map("map", {
       center: new L.LatLng(-12.37, 130.87),
-      zoom: 14,
+      zoom: 15,
       layers: new L.TileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png")
   });
 }
